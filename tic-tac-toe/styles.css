@@ -1,0 +1,38 @@
+body {
+   font-family: Roboto, Helvetica, sans-serif;
+   text-align: center;
+}
+
+.x {
+   color: red;
+}
+
+.o {
+   color: blue;
+ }
+ 
+#board {
+   font: 85px arial, sans-serif;
+   margin: 3px;
+   
+   /* Your solution goes here */  
+   display: grid;
+   grid-template-columns: 100px 100px 100px;
+   grid-template-rows: 100px 100px 100px;
+   gap: 10px;
+   justify-content: center;
+
+}
+
+#board > div {
+   border: 3px dashed LightSkyBlue;
+   text-align: center;
+   border-radius: 17%;
+   box-shadow: 5px 5px 100px #d0d0d0bf;
+}
+
+#board > div:hover {
+   box-shadow: 5px 5px 100px #e1f643;
+   font-weight: bold;
+   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
